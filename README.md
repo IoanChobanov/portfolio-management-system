@@ -21,9 +21,9 @@ This project focuses on backend structure and secure data management. The main f
 - **Frontend:** Blade, Tailwind CSS
 - **Auth:** Laravel Breeze
 
-## Getting Started
+## How to run
 
-If you want to run this locally to check the code:
+If you want to run this locally or to check the code:
 
 ```bash
 # 1. Clone the repo
