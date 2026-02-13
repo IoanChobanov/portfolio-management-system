@@ -1,26 +1,25 @@
 # Portfolio Management System
 
-A robust, full-stack Content Management System (CMS) built with **Laravel** and **Tailwind CSS**.
+A full-stack Content Management System (CMS) developed using **Laravel** and **Blade templates**. The application allows for managing personal projects, implementing specific architectural patterns and security measures.
 
 ## About The Project
 
-I built this platform not just to manage my personal projects, but to practice advanced Laravel architecture in a real-world scenario. While it looks like a standard portfolio on the surface, the backend focuses heavily on **clean code principles** and **security**.
+This project focuses on backend structure and secure data management. The main features include:
 
-Instead of cluttering Controllers with business logic, I implemented the **Service Pattern**. This keeps the codebase maintainable and testable. I also extended the standard authentication system to include a custom **Role-Based Access Control (RBAC)**, allowing strictly defined permissions for Admins and regular Users.
-
-## Technical Highlights
-
-- **Architecture:** The application avoids "Fat Controllers" by offloading complex logic to dedicated Service classes.
-- **Security First:** Beyond standard CSRF protection, I utilized strict **Form Requests** for validation and Laravel **Policies** to authorize actions at the model level.
-- **Frontend:** Built with **Blade** templates and **Tailwind CSS** for a fast, server-side rendered UI that is fully responsive without the complexity of a SPA.
-- **Data Management:** Features a complete file management system for uploading project assets, utilizing Laravel's Storage facade and Eloquent relationships.
+- **Architecture:** Implemented the **Service Pattern** to separate business logic from controllers, ensuring a cleaner codebase.
+- **Frontend Rendering:** Built the user interface using **Blade Templates** for server-side rendering, styled with **Tailwind CSS**.
+- **Role-Based Access Control (RBAC):** Extended Laravel Breeze authentication to support user roles (Admin vs. Standard User).
+- **Authorization:** Utilized **Laravel Policies** and Gates to control access to specific resources and actions.
+- **Data Validation:** Implemented strict **Form Requests** to validate all incoming data and prevent security vulnerabilities.
+- **File Management:** Integrated file storage functionality for uploading and managing project images.
+- **Database:** Designed a relational database schema in **MySQL** using migrations and Eloquent ORM.
 
 ## Stack
 
-- **Framework:** Laravel 10+
+- **Framework:** Laravel 11+
 - **Database:** MySQL
-- **Styling:** Tailwind CSS
-- **Auth:** Laravel Breeze (Customized)
+- **Frontend:** Blade, Tailwind CSS
+- **Auth:** Laravel Breeze
 
 ## Getting Started
 
